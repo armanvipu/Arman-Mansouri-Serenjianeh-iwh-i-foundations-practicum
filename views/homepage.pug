@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title= title
+  body
+    h1= title
+    a(href='/update-cobj') Add a new book
+    table(border='1')
+      thead
+        tr
+          th Name
+          th Author
+          th Summary
+      tbody
+        each book in records
+          tr
+            td= book.properties.name
+            td= book.properties.author
+            td= book.properties.summary
