@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    title= title
+  body
+    h1= title
+    a(href='/') Return to the homepage
+    form(action='/update-cobj' method='POST')
+      label(for='name') Name:
+      input(type='text' name='name' required)
+      br
+      label(for='author') Author:
+      input(type='text' name='author' required)
+      br
+      label(for='summary') Summary:
+      input(type='text' name='summary')
+      br
+      button(type='submit') Submit
